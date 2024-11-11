@@ -57,7 +57,7 @@ Where:
 
 ## Results
 
-The results of the simulation are shown below. The **MPC Horizon** is set to 0.5 seconds, with 5 divisions in the horizon. The computation time for each MPC step is on average 0.40565 ms.
+The results of the simulation are shown below. The **MPC Horizon** is set to 0.5 seconds, with 5 divisions in the horizon. The computation time for each MPC step is on average 0.06 ms.
 
 ![Simulation Results](images/output_figure.svg)
 
