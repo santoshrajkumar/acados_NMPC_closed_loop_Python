@@ -43,7 +43,11 @@ The system is inherently unstable around the equilibrium point $(x_1, x_2) = (0,
 A **Model Predictive Control (MPC)** approach is used to stabilize the pendulum around the upright position. The problem is formulated as an **optimal control problem (OCP)**, where the objective is to minimize the cost function:
 
 $$
-\text{min  } J = \int_0^{t_N} \left\|\mathbf{x} - \mathbf{x}_{\text{ref}}\right\|_\mathbf{Q}^2 + \left\|\mathbf{u} - \mathbf{u}_{\text{ref}}\right\|_\mathbf{R}^2 + \left\|\mathbf{x}(t_N) - \mathbf{x}_{\text{ref}}(t_N)\right\|^2_\mathbf{Q_T}
+\text{min  } J = \int_0^{t_N} \left\|\mathbf{x} - \mathbf{x}_{\text{ref}}\right\|_\mathbf{Q}^2 + \left\|\mathbf{u} - \mathbf{u}_{\text{ref}}\right\|_\mathbf{R}^2 +J_T,
+$$
+with 
+$$
+J_T= \left\|\mathbf{x}(t_N) - \mathbf{x}_{\text{ref}}(t_N)\right\|^2_\mathbf{Q_T},
 $$
 
 Where:
